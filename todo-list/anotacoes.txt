@@ -1,0 +1,26 @@
+** baixou um projeto novo , antes de testar use**
+->  npm install
+
+** para criar um angular novo **
+->  npm init @angular nomedoProjeto
+
+**para instalar o angular material usa-se este comando**
+->  npm install @angular/material
+https://material.angular.io/guide/getting-started
+
+
+->> copia o import (import { MatSlideToggleModule } from '@angular/material/slide-toggle';)->>
+->> coloca em app module-ts
+ em import  coloca ->> MatSlideToggleModule ->>
+ no html ->> <mat-slide-toggle>Toggle me!</mat-slide-toggle>->>
+
+ depois vai em css e coloca o prebuit
+ ->> @import "@angular/material/prebuilt-themes/indigo-pink.css"
+
+pra escolher outro  vai em componetes
+ escolhe um ,
+add
+o import no arqui
+vo TS
+ ->>import {MatChipsModule} from '@angular/material/chips';->>
+ depois  coloca o codigo  html 
