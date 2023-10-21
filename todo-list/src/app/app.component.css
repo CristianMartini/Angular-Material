@@ -1,1 +1,14 @@
-@import "@angular/material/prebuilt-themes/indigo-pink.css"
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+main{
+width: 600px;
+margin: auto;
+position: relative;
+height: 100%;
+}
+
+button{
+position:absolute;
+bottom: 20px;
+right: 20px;
+}

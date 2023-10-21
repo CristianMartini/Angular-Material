@@ -1,22 +1,25 @@
-<h1>hello word</h1>
+<main>
+  <div *ngFor="let tarefa of tarefas">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2>{{tarefa.name}}</h2>
+          </mat-panel-title>
 
+      </mat-expansion-panel-header>
+      <h3> {{tarefa.descricao}}</h3>
 
-<mat-expansion-panel>
-<mat-expansion-panel-header>
-<mat-panel-title>
-<h1>titulo</h1>
-</mat-panel-title>
-<mat-panel-description>
-<!-- descriçao-->
-</mat-panel-description>
-</mat-expansion-panel-header>
-<mat-chip-listbox aria-label="fish selection">
-<mat-chip-option selected>A fazer</mat-chip-option>
-      <mat-chip-option>fazendo</mat-chip-option>
-      <mat-chip-option >concluido</mat-chip-option>
-    </mat-chip-listbox>
-</mat-expansion-panel>
-<button (click)="openDialog()" mat-fab color="Primary">
-  <mat-icon> Add</mat-icon>
-</button>
+       <mat-chip-listbox aria-label="fish selection">
+          <mat-chip-option selected>A fazer</mat-chip-option>
+          <mat-chip-option>fazendo</mat-chip-option>
+          <mat-chip-option>concluido</mat-chip-option>
+        </mat-chip-listbox>
 
+      </mat-expansion-panel>
+  </div>
+
+  <button (click)="openDialog()" mat-fab color="Primary">
+    <mat-icon>add</mat-icon>
+  </button>
+
+</main>
